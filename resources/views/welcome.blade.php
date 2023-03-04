@@ -49,7 +49,7 @@
                             <a href="#" class="text-sm font-semibold leading-6 text-white">La boutique <span aria-hidden="true">→</span></a>
                         </div>
                     </div>
-                    <img src="{{ Vite::asset('resources/img/equipage.png') }}" alt="App screenshot" width="2432" height="1442" class="mt-16 rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10 sm:mt-24">
+                    <img src="{{ asset('img/equipage.png') }}" alt="App screenshot" width="2432" height="1442" class="mt-16 rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10 sm:mt-24">
                 </div>
                 <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
                     <svg class="relative left-[calc(50%+3rem)] h-[21.1875rem] max-w-none -translate-x-1/2 sm:left-[calc(50%+36rem)] sm:h-[42.375rem]" viewBox="0 0 1155 678">
@@ -114,7 +114,7 @@
         <div class="py-24 px-6 sm:px-6 sm:py-32 lg:px-8">
             <div class="mx-auto max-w-2xl text-center">
                 <div class="flex items-center justify-center w-full -ml-4 space-x-2">
-                    <img class="w-14" src="{{ Vite::asset('resources/img/thesorority.webp') }}" alt="Le logo The Sorority">
+                    <img class="w-14" src="{{ asset('img/thesorority.webp') }}" alt="Le logo The Sorority">
                     <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
                         The Sorority
                     </h2>
