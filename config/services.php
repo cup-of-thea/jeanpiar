@@ -31,4 +31,10 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'twitch' => [
+        'client' => env('TWITCH_ID'),
+        'secret' => env('TWITCH_SECRET'),
+        'broadcaster' => env('TWITCH_BROADCASTER'),
+    ]
+
 ];

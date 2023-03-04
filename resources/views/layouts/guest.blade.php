@@ -18,5 +18,10 @@
         <div class="font-sans text-gray-900 antialiased">
             {{ $slot }}
         </div>
+        <footer class="bg-white">
+            <div class="mx-auto max-w-7xl overflow-hidden py-20 px-6 sm:py-16 lg:px-8">
+                <p class="text-center leading-5 text-gray-500">&copy; {{ \Carbon\Carbon::now()->year }}  Nikiunderscore.</p>
+            </div>
+        </footer>
     </body>
 </html>
