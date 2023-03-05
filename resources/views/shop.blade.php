@@ -249,13 +249,6 @@
                             </ul>
                         </div>
                     </div>
-
-                    <div class="mt-12 px-4 sm:hidden">
-                        <a href="#" class="text-sm font-semibold text-indigo-600 hover:text-indigo-500">
-                            See everything
-                            <span aria-hidden="true"> &rarr;</span>
-                        </a>
-                    </div>
                 </div>
             </section>
         </main>
