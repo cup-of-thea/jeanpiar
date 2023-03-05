@@ -14,9 +14,8 @@
         <div class="px-6 pt-6 lg:px-8">
             <nav class="flex items-center justify-between" aria-label="Global">
                 <div class="flex lg:flex-1">
-                    <a href="#" class="-m-1.5 p-1.5">
-                        <span class="sr-only">Your Company</span>
-                        <img class="h-8" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="">
+                    <a href="{{ route('home') }}" class="-m-1.5 p-1.5">
+                        <img class="h-20" src="{{ asset('img/aquoualix.png') }}" alt="Logo Aquoualix" />
                     </a>
                 </div>
                 <div class="flex flex-1 justify-end space-x-4">
@@ -37,16 +36,19 @@
             <div class="relative py-24 sm:py-32 lg:pb-40">
                 <div class="mx-auto max-w-7xl px-6 lg:px-8">
                     <div class="mx-auto max-w-2xl text-center">
-                        <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">Jean piaaaaar</h1>
+                        <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+                            Jean Piaaaaar
+                        </h1>
                         <p class="mt-6 text-lg leading-8 text-gray-300">
                             Jean piar, c'est l'assistant virtuel personnel de Nikiunderscore, et sur ce site, il a une nouvelle mission : aider les viewers à
                             voir et rejoindre les réseaux de Niki ^-^
                         </p>
+                        <img class="h-36 mt-4 mx-auto" src="{{ asset('img/aquoualix.png') }}" alt="Logo Aquoualix" />
                         <div class="mt-10 flex items-center justify-center gap-x-6">
-                            <a href="https://www.twitch.tv/nikiunderscore" class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400">
+                            <a href="https://www.twitch.tv/nikiunderscore" class="rounded-md bg-indigo-500 px-3.5 py-2.5 font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400">
                                 Le Twitch de Niki
                             </a>
-                            <a href="#" class="text-sm font-semibold leading-6 text-white">La boutique <span aria-hidden="true">→</span></a>
+                            <a href="{{ route('shop') }}" class="font-semibold leading-6 text-white">La boutique <span aria-hidden="true">→</span></a>
                         </div>
                     </div>
                     <img src="{{ asset('img/equipage.png') }}" alt="App screenshot" width="2432" height="1442" class="mt-16 rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10 sm:mt-24">
@@ -129,9 +131,12 @@
                        class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-indigo-600 shadow-sm hover:bg-indigo-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
                         Découvrir
                     </a>
+                    <a href="https://streamlabscharity.com/teams/@zest-of-charity/zest-of-charity?member=515307901036928912"
+                       class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-indigo-600 shadow-sm hover:bg-indigo-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+                        Faire un don
+                    </a>
                 </div>
             </div>
         </div>
     </div>
-
 </x-guest-layout>
