@@ -56,7 +56,7 @@
                         </h2>
                     </div>
 
-                    <div class="relative mt-8">
+                    <div class="relative pt-8 overflow-x-auto">
                         <div class="relative w-full">
                             <ul role="list" class="mx-4 inline-flex space-x-8 sm:mx-6 lg:mx-0 lg:grid lg:grid-cols-4 lg:gap-x-8 lg:space-x-0">
                                 <li class="inline-flex w-64 mb-8 flex-col text-center lg:w-auto">
