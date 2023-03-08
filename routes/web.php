@@ -1,5 +1,8 @@
 <?php
 
+declare(strict_types=1);
+
+use App\Http\Controllers\Event\ShowEventController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,14 +16,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', fn() => view('welcome'))->name('home');
+Route::get('/', fn () => view('welcome'))->name('home');
 
-Route::get('/shop', fn() => view('shop'))->name('shop');
+Route::get('/shop', fn () => view('shop'))->name('shop');
+
+Route::get('/events/{event}', ShowEventController::class)->name('event');
 
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
-    'verified'
+    'verified',
 ])->group(function () {
     Route::get('/dashboard', function () {
         return view('dashboard');

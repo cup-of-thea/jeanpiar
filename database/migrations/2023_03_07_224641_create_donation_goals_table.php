@@ -16,6 +16,7 @@ return new class () extends Migration {
             $table->unsignedInteger('value')->index();
             $table->string('title');
             $table->boolean('is_completed')->default(false);
+            $table->boolean('is_every')->default(false);
 
             $table->timestamps();
         });

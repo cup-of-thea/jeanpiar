@@ -15,6 +15,9 @@ return new class () extends Migration {
             $table->string('title');
             $table->string('slug')->unique();
             $table->unsignedInteger('amount_done')->nullable();
+            $table->date('start_on')->nullable();
+            $table->date('end_on')->nullable();
+            $table->string('image');
 
             $table->timestamps();
         });

@@ -41,8 +41,8 @@
                         <p class="mx-auto mt-4 max-w-xl text-xl text-gray-600">
                             THE SORORITY est une communauté bienveillante de protection, d’entraide et de partage de femmes et personnes issues des minorités de genre prê.te.s à agir au quotidien pour assurer leur sécurité et leur épanouissement. Pour faire face ensemble notamment aux violences conjugales, intra-familiales et à toutes les formes de harcèlement.
                         </p>
-                        <a href="https://streamlabscharity.com/teams/@zest-of-charity/zest-of-charity?member=515307901036928912" class="mt-6 inline-block w-full rounded-md border border-transparent bg-gray-900 py-3 px-8 font-medium text-white hover:bg-gray-800 sm:w-auto">
-                            Faire un don #ZestOfCharity
+                        <a href="https://www.jointhesorority.com/" class="mt-6 inline-block w-full rounded-md border border-transparent bg-gray-900 py-3 px-8 font-medium text-white hover:bg-gray-800 sm:w-auto">
+                            Découvrir
                         </a>
                     </div>
                 </section>

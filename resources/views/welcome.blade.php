@@ -21,9 +21,9 @@
                 <div class="flex flex-1 justify-end space-x-4">
                     @if(Route::has('login'))
                         @auth()
-                            <a href="{{ route('dashboard') }}" class="text-sm font-semibold leading-6 text-white">Dashboard</a>
+                            <a href="/admin" class="text-sm font-semibold leading-6 text-white">Dashboard</a>
                         @else
-                            <a href="{{ route('login') }}" class="text-sm font-semibold leading-6 text-white">Log in</a>
+                            <a href="/admin/login" class="text-sm font-semibold leading-6 text-white">Log in</a>
                             @if(Route::has('register'))
                                 <a href="{{ route('register') }}" class="text-sm font-semibold leading-6 text-white">Register</a>
                             @endif
@@ -67,6 +67,7 @@
             </div>
         </main>
     </div>
+
     <livewire:twitch.component.broadcaster-information/>
 
     <div class="bg-gray-900 py-24 sm:py-32">
@@ -112,6 +113,8 @@
         </div>
     </div>
 
+    <livewire:event.component.last-events />
+
     <div class="bg-indigo-700">
         <div class="py-24 px-6 sm:px-6 sm:py-32 lg:px-8">
             <div class="mx-auto max-w-2xl text-center">
@@ -130,10 +133,6 @@
                     <a href="https://www.jointhesorority.com/"
                        class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-indigo-600 shadow-sm hover:bg-indigo-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
                         Découvrir
-                    </a>
-                    <a href="https://streamlabscharity.com/teams/@zest-of-charity/zest-of-charity?member=515307901036928912"
-                       class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-indigo-600 shadow-sm hover:bg-indigo-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
-                        Faire un don
                     </a>
                 </div>
             </div>

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 use Illuminate\Support\Facades\Facade;
 
 return [
@@ -82,7 +84,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'fr_FR',
 
     /*
     |--------------------------------------------------------------------------
@@ -95,7 +97,7 @@ return [
     |
     */
 
-    'fallback_locale' => 'en',
+    'fallback_locale' => 'fr_FR',
 
     /*
     |--------------------------------------------------------------------------
