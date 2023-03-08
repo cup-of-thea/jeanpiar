@@ -21,9 +21,12 @@
                 <div class="flex flex-1 justify-end space-x-4">
                     @if(Route::has('login'))
                         @auth()
-                            <a href="/admin" class="text-sm font-semibold leading-6 text-white">Dashboard</a>
+                            @if('admin' === auth()->user()->role)
+                                <a href="/admin" class="text-sm font-semibold leading-6 text-white">Admin</a>
+                            @endif
+                                <a href="{{ route('dashboard') }}" class="text-sm font-semibold leading-6 text-white">Dashboard</a>
                         @else
-                            <a href="/admin/login" class="text-sm font-semibold leading-6 text-white">Log in</a>
+                            <a href="{{ route('login') }}" class="text-sm font-semibold leading-6 text-white">Log in</a>
                             @if(Route::has('register'))
                                 <a href="{{ route('register') }}" class="text-sm font-semibold leading-6 text-white">Register</a>
                             @endif
