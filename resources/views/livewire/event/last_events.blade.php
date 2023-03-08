@@ -23,8 +23,8 @@
                                 </div>
                                 <div class="w-full">
                                     <div class="mt-8 flex items-center justify-between gap-x-4 text-xs">
-                                        <p class="text-gray-500">{{ $event->start_on }}</p>
-                                        <p class="text-gray-500">{{ $event->end_on }}</p>
+                                        <p class="text-gray-500">{{ $event->start_on_format }}</p>
+                                        <p class="text-gray-500">{{ $event->end_on_format }}</p>
                                     </div>
                                     <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
                                         {{ $event->title }}

@@ -29,14 +29,14 @@ class Event extends Model
             ->saveSlugsTo('slug');
     }
 
-    protected function startOn(): Attribute
+    protected function startOnFormat(): Attribute
     {
         return Attribute::make(
             get: fn ($value) => Carbon::create($value)->isoFormat('dddd D MMMM YYYY'),
         );
     }
 
-    protected function endOn(): Attribute
+    protected function endOnFormat(): Attribute
     {
         return Attribute::make(
             get: fn ($value) => Carbon::create($value)->isoFormat('dddd D MMMM YYYY'),
