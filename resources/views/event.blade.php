@@ -72,7 +72,7 @@
 
                                     <h2 id="information-heading" class="sr-only">Informations sur l'Event</h2>
                                     <p class="mt-4 text-gray-500">
-                                        Du {{ $event->start_on_format }} au {{ $event->end_on_format }}
+                                        Du {{ $event->startOnFormat }} au {{ $event->end_on_format }}
                                     </p>
                                 </div>
 

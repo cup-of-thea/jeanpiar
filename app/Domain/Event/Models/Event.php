@@ -32,14 +32,14 @@ class Event extends Model
     protected function startOnFormat(): Attribute
     {
         return Attribute::make(
-            get: fn ($value) => Carbon::create($value)->isoFormat('dddd D MMMM YYYY'),
+            get: fn () => Carbon::create($this->start_on)->isoFormat('dddd D MMMM YYYY'),
         );
     }
 
     protected function endOnFormat(): Attribute
     {
         return Attribute::make(
-            get: fn ($value) => Carbon::create($value)->isoFormat('dddd D MMMM YYYY'),
+            get: fn () => Carbon::create($this->end_on)->isoFormat('dddd D MMMM YYYY'),
         );
     }
 
