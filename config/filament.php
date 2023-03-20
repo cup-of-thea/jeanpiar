@@ -123,7 +123,8 @@ return [
         'namespace' => 'App\\Filament\\Resources',
         'path' => app_path('Filament/Resources'),
         'register' => [
-            \App\Filament\Event\EventResource::class
+            \App\Filament\Event\EventResource::class,
+            \App\Filament\Shops\ShopResource::class,
         ],
     ],
 

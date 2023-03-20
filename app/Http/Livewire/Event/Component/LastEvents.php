@@ -15,7 +15,8 @@ class LastEvents extends Component
         return view('livewire.event.last_events', [
             'events' => Event::query()
                 ->orderBy('end_on', 'DESC')
-                ->take(3)->get(),
+                ->take(3)
+                ->get(),
         ]);
     }
 }

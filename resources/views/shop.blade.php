@@ -48,6 +48,8 @@
                 </section>
             </div>
 
+            <livewire:shops.component.niki-shops />
+
             <section aria-labelledby="trending-heading" class="bg-white">
                 <div class="py-16 sm:py-24 lg:mx-auto lg:max-w-7xl lg:py-32 lg:px-8">
                     <div class="flex items-center justify-between px-4 sm:px-6 lg:px-0">
